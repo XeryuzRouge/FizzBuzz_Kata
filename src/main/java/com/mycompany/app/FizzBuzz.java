@@ -12,6 +12,8 @@ public class FizzBuzz {
 
       if (i % 3 == 0) {
         element = "Fizz";
+      } else if (i % 5 == 0) {
+        element = "Buzz";
       } else {
         element = Integer.toString(i);
       }
