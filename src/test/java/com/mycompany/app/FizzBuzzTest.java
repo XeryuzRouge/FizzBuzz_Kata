@@ -28,6 +28,12 @@ class FizzBuzzTest {
     }
   }
 
+  @Test public void returnsFizzBuzzForMultipliersOf3And5() {
+    for (int i : Arrays.asList(15, 30, 45, 60, 90)) {
+        assertEquals("FizzBuzz", list.get(i-1), Integer.toString(i));
+    }
+  }
+
   @Test public void returnsNonMultipliersOf3Or5AsNumbers() {
     for (int i : Arrays.asList(1, 2, 4, 7, 8, 11, 44, 67, 86, 98)) {
         assertEquals(Integer.toString(i), list.get(i-1));

@@ -8,13 +8,17 @@ public class FizzBuzz {
     List<String> list = new ArrayList<String>();
 
     for (int i = 1; i<=n; i++) {
-      String element;
+      String element = "";
 
       if (i % 3 == 0) {
-        element = "Fizz";
-      } else if (i % 5 == 0) {
-        element = "Buzz";
-      } else {
+        element += "Fizz";
+      }
+
+      if (i % 5 == 0) {
+        element += "Buzz";
+      }
+
+      if (element.isEmpty()) {
         element = Integer.toString(i);
       }
 
